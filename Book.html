@@ -34,42 +34,12 @@
 
 </head>
 <body onload="assegnaParametri()">
-    <!-- HEADER: Menu, Explore, Discover -->
-    <div class="row-es-1 row-s-1 col-es-12 col-s-12" style="padding-top:1%;">
-        <div class="es-inline s-inline col-es-10 col-s-6 col-m-3 row-es-12 row-s-12">
-            <div style="display: inline-block">
-                <div class="row-es-12 row-s-12 m-hidden">
-                    <i id="SDMenuIcon" class="fas fa-bars" style="cursor: pointer"></i>
-                </div>
-            </div>
-            <a id="bnIndex" class="t5" style="color: black; font-weight:bold; display:inline-block; text-decoration:none;">ROYALSAFARI</a>
-        </div>
-        <div class="es-hidden s-hidden m-inline col-m-3 row-m-12" onclick="ExploreOverlayOn()">
-            <p class="t5" style="display:inline-block; font-weight:bold;">EXPLORE</p>
-            <i class="fas fa-caret-down" style="color: black"></i>
-        </div>
-        <div class="es-hidden s-hidden m-inline col-m-2 row-m-12">
-        </div>
-        <div class="es-hidden s-hidden m-inline col-m-3 row-m-12">
-            <div class="row-m-8" style="height: 40px; color: white; font-weight:bold; padding:3px; border-radius:5px; background-color:rgb(227, 232, 239); position:relative;">
-                <i class="fa fa-search" style="color: rgb(220, 224, 229); position: absolute; top:50%; left:1%; transform: translateY(-50%); -ms-transform: translateY(-50%);"></i>
-                <input style="position: absolute; top:50%; left:8%; transform: translateY(-50%); -ms-transform: translateY(-50%); width: 80%; height:100%; border: none; background-color:rgb(227, 232, 239); display:inline-block;" placeholder="Discover..." onkeyup="DiscoverDropdownOn(),showHint(this.value)" onfocusout="DiscoverDropdownOff()"></input>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="row-es-1 row-s-1 col-es-12 col-s-12">
-    </div>
+ 
 
 
     <!-- BODY -->
     <!-- ...FYI: display contents allows all the elements inside the form to do not consider the form as their contenitor element. So, the % of size is referred to the body size and the size of the form
                 adapts to its content size. In this way the FOOTER section appears below the last element of the overflow, and not just below the form, and so hidden by the oveflow elements of the form -->
-    <form style="display:contents;">
-        <div style="width:100%; display: flex; align-items:center; flex-wrap:wrap;">
-        </div>
         <div class="col-es-12 col-s-12" style="display: flex; align-items:center; flex-wrap:wrap;">
             <div class="row-es-12 row-s-12 col-es-2 col-s-2">
             </div>
@@ -89,56 +59,103 @@
         <div class="row-es-1 row-s-1 col-es-12 col-s-12">
         </div>
 
-        <div >
-            <div class="col-es-1 col-s-1 m-hidden" style="display:inline-block;">
-            </div>
-    <div class="col-es-10 col-s-10 col-m-12" style="display:inline-block; background: linear-gradient(90deg, rgba(246,233,254,1) 3%, rgba(255,255,255,1) 100%); text-align:center; border-radius:15px;">
-        <p class="t1" style="padding-top:3%;">Vehicle</p>
-        <p>Select your preferred vehicle type or choose directly from the vehicles list</p>
-        <div class="col-es-12 col-s-12" style="padding:3%; display: flex; align-items:center; flex-wrap:wrap;">
+        <div class="col-es-12 col-s-12" style="display: flex; align-items:center; flex-wrap:wrap;">
             <div class="row-es-12 row-s-12 col-es-2 col-s-2">
             </div>
-            <div class="col-es-8 col-s-8" style="display: flex; flex-wrap:wrap; justify-content: space-between;">
-                <input style="height:0; width:0; position:absolute;" type="radio" name="vehicletype" id="car" value="car" />
-                <label class="sq-es-6 sq-s-6 sq-m-2" for="car" style="background-image:url('images/CAR.png'); background-size: 80% 80%;background-position: center; background-repeat: no-repeat;">
-                </label>
-                <input style="height:0; width:0; position:absolute;" type="radio" name="vehicletype" id="jeep" value="jeep" />
-                <label class="sq-es-6 sq-s-6 sq-m-2" for="jeep" style="background-image:url('images/JEEP.png'); background-size: 80% 80%;background-position: center; background-repeat: no-repeat;">
-                </label>
-                <input style="height:0; width:0; position:absolute;" type="radio" name="vehicletype" id="van" value="van" />
-                <label class="sq-es-6 sq-s-6 sq-m-2" for="van" style="background-image:url('images/VAN.png'); background-size: 80% 80%;background-position: center; background-repeat: no-repeat;">
-                </label>
-                <label id="pgBookBnVehicles" class="sq-es-6 sq-s-6 sq-m-2" style="background-image:url('images/VEHICLE.png'); background-size: 80% 80%;background-position: center; background-repeat: no-repeat;"> </label>
+            <div class="col-es-8 col-s-8" style="display: flex; flex-wrap:wrap;">
+                <input class="col-es-12 col-s-12 col-m-3 m-tl-roundcorner m-bl-roundcorner" id="from" placeholder="From" style=" height:50px; border:3px solid rgba(163,40,233,1);" onfocusout="DrivingCostCalculator()"> </input>
+                <input class="col-es-12 col-s-12 col-m-3" id="to" placeholder="To" style=" height:50px; border:3px solid rgba(163,40,233,1); " onfocusout="DrivingCostCalculator()"> </input>
+                <input class="min-col-es-12 min-col-s-12 min-col-m-3 col-es-12 col-s-12 col-m-3" type="date" id="when" placeholder="When" style="height:50px; border:3px solid rgba(163,40,233,1); "> </input>
+                <div class="col-es-12 col-s-12 col-m-3" style=" height:50px;">
+                    <input id="nights" type="number" placeholder="How many nights?" style="width: 50%; height:50px; border:3px solid rgba(163,40,233,1); display: inline-block; float:left;"> </input>
+                    <input class="m-tr-roundcorner m-br-roundcorner" id="people" type="number" placeholder="How many people?" style="width: 50%; height:50px; border:3px solid rgba(163,40,233,1); display: inline-block; float:left;" onfocusout="personCostCalculator()"> </input>
+                </div>
             </div>
             <div class="row-es-12 row-s-12 col-es-2 col-s-2">
             </div>
         </div>
-    </div>
-</div>
+
+        <div class="row-es-1 row-s-1 col-es-12 col-s-12">
+        </div>
+
+        <div class="col-es-12 col-s-12" style="display: flex; align-items:center; flex-wrap:wrap;">
+            <div class="row-es-12 row-s-12 col-es-2 col-s-2">
+            </div>
+            <div class="col-es-8 col-s-8" style="display: flex; flex-wrap:wrap;">
+                <input class="col-es-12 col-s-12 col-m-3 m-tl-roundcorner m-bl-roundcorner" id="from" placeholder="From" style=" height:50px; border:3px solid rgba(163,40,233,1);" onfocusout="DrivingCostCalculator()"> </input>
+                <input class="col-es-12 col-s-12 col-m-3" id="to" placeholder="To" style=" height:50px; border:3px solid rgba(163,40,233,1); " onfocusout="DrivingCostCalculator()"> </input>
+                <input class="min-col-es-12 min-col-s-12 min-col-m-3 col-es-12 col-s-12 col-m-3" type="date" id="when" placeholder="When" style="height:50px; border:3px solid rgba(163,40,233,1); "> </input>
+                <div class="col-es-12 col-s-12 col-m-3" style=" height:50px;">
+                    <input id="nights" type="number" placeholder="How many nights?" style="width: 50%; height:50px; border:3px solid rgba(163,40,233,1); display: inline-block; float:left;"> </input>
+                    <input class="m-tr-roundcorner m-br-roundcorner" id="people" type="number" placeholder="How many people?" style="width: 50%; height:50px; border:3px solid rgba(163,40,233,1); display: inline-block; float:left;" onfocusout="personCostCalculator()"> </input>
+                </div>
+            </div>
+            <div class="row-es-12 row-s-12 col-es-2 col-s-2">
+            </div>
+        </div>
+
+        <div class="row-es-1 row-s-1 col-es-12 col-s-12">
+        </div>
+
+        <div class="col-es-12 col-s-12" style="display: flex; align-items:center; flex-wrap:wrap;">
+            <div class="row-es-12 row-s-12 col-es-2 col-s-2">
+            </div>
+            <div class="col-es-8 col-s-8" style="display: flex; flex-wrap:wrap;">
+                <input class="col-es-12 col-s-12 col-m-3 m-tl-roundcorner m-bl-roundcorner" id="from" placeholder="From" style=" height:50px; border:3px solid rgba(163,40,233,1);" onfocusout="DrivingCostCalculator()"> </input>
+                <input class="col-es-12 col-s-12 col-m-3" id="to" placeholder="To" style=" height:50px; border:3px solid rgba(163,40,233,1); " onfocusout="DrivingCostCalculator()"> </input>
+                <input class="min-col-es-12 min-col-s-12 min-col-m-3 col-es-12 col-s-12 col-m-3" type="date" id="when" placeholder="When" style="height:50px; border:3px solid rgba(163,40,233,1); "> </input>
+                <div class="col-es-12 col-s-12 col-m-3" style=" height:50px;">
+                    <input id="nights" type="number" placeholder="How many nights?" style="width: 50%; height:50px; border:3px solid rgba(163,40,233,1); display: inline-block; float:left;"> </input>
+                    <input class="m-tr-roundcorner m-br-roundcorner" id="people" type="number" placeholder="How many people?" style="width: 50%; height:50px; border:3px solid rgba(163,40,233,1); display: inline-block; float:left;" onfocusout="personCostCalculator()"> </input>
+                </div>
+            </div>
+            <div class="row-es-12 row-s-12 col-es-2 col-s-2">
+            </div>
+        </div>
+
+        <div class="row-es-1 row-s-1 col-es-12 col-s-12">
+        </div>
+
+        <div class="col-es-12 col-s-12" style="display: flex; align-items:center; flex-wrap:wrap;">
+            <div class="row-es-12 row-s-12 col-es-2 col-s-2">
+            </div>
+            <div class="col-es-8 col-s-8" style="display: flex; flex-wrap:wrap;">
+                <input class="col-es-12 col-s-12 col-m-3 m-tl-roundcorner m-bl-roundcorner" id="from" placeholder="From" style=" height:50px; border:3px solid rgba(163,40,233,1);" onfocusout="DrivingCostCalculator()"> </input>
+                <input class="col-es-12 col-s-12 col-m-3" id="to" placeholder="To" style=" height:50px; border:3px solid rgba(163,40,233,1); " onfocusout="DrivingCostCalculator()"> </input>
+                <input class="min-col-es-12 min-col-s-12 min-col-m-3 col-es-12 col-s-12 col-m-3" type="date" id="when" placeholder="When" style="height:50px; border:3px solid rgba(163,40,233,1); "> </input>
+                <div class="col-es-12 col-s-12 col-m-3" style=" height:50px;">
+                    <input id="nights" type="number" placeholder="How many nights?" style="width: 50%; height:50px; border:3px solid rgba(163,40,233,1); display: inline-block; float:left;"> </input>
+                    <input class="m-tr-roundcorner m-br-roundcorner" id="people" type="number" placeholder="How many people?" style="width: 50%; height:50px; border:3px solid rgba(163,40,233,1); display: inline-block; float:left;" onfocusout="personCostCalculator()"> </input>
+                </div>
+            </div>
+            <div class="row-es-12 row-s-12 col-es-2 col-s-2">
+            </div>
+        </div>
+
+        <div class="row-es-1 row-s-1 col-es-12 col-s-12">
+        </div>
+
+        <div class="col-es-12 col-s-12" style="display: flex; align-items:center; flex-wrap:wrap;">
+            <div class="row-es-12 row-s-12 col-es-2 col-s-2">
+            </div>
+            <div class="col-es-8 col-s-8" style="display: flex; flex-wrap:wrap;">
+                <input class="col-es-12 col-s-12 col-m-3 m-tl-roundcorner m-bl-roundcorner" id="from" placeholder="From" style=" height:50px; border:3px solid rgba(163,40,233,1);" onfocusout="DrivingCostCalculator()"> </input>
+                <input class="col-es-12 col-s-12 col-m-3" id="to" placeholder="To" style=" height:50px; border:3px solid rgba(163,40,233,1); " onfocusout="DrivingCostCalculator()"> </input>
+                <input class="min-col-es-12 min-col-s-12 min-col-m-3 col-es-12 col-s-12 col-m-3" type="date" id="when" placeholder="When" style="height:50px; border:3px solid rgba(163,40,233,1); "> </input>
+                <div class="col-es-12 col-s-12 col-m-3" style=" height:50px;">
+                    <input id="nights" type="number" placeholder="How many nights?" style="width: 50%; height:50px; border:3px solid rgba(163,40,233,1); display: inline-block; float:left;"> </input>
+                    <input class="m-tr-roundcorner m-br-roundcorner" id="people" type="number" placeholder="How many people?" style="width: 50%; height:50px; border:3px solid rgba(163,40,233,1); display: inline-block; float:left;" onfocusout="personCostCalculator()"> </input>
+                </div>
+            </div>
+            <div class="row-es-12 row-s-12 col-es-2 col-s-2">
+            </div>
+        </div>
+
+        <div class="row-es-1 row-s-1 col-es-12 col-s-12">
+        </div>
 
 
 
-
-    <!-- FOOTER -->
-    <div class="row-es-1 row-s-1 col-es-12 col-s-12" style="margin-bottom:30px;">
-        <table class="col-es-12 col-s-12 row-es-12 row-s-12">
-            <tr class="col-es-12 col-s-12 row-es-4 row-s-4">
-                <td class="col-es-4 col-s-4" style="text-align:center">  </td>
-                <td class="col-es-4 col-s-4" style="text-align:center">  </td>
-                <td class="col-es-4 col-s-4" style="text-align:center">  </td>
-            </tr>
-            <tr class="col-es-12 col-s-12 row-es-4 row-s-4">
-                <td class="col-es-4 col-s-4" style="text-align:center"> About us </td>
-                <td class="col-es-4 col-s-4" style="text-align:center"> Work with us </td>
-                <td class="col-es-4 col-s-4" style="text-align:center"> ROYALSAFARI. All rights reserved </td>
-            </tr>
-            <tr class="col-es-12 col-s-12 row-es-4 row-s-4">
-                <td class="col-es-4 col-s-4" style="text-align:center"> Privacy policy </td>
-                <td class="col-es-4 col-s-4" style="text-align:center"> Contacts </td>
-                <td class="col-es-4 col-s-4" style="text-align:center"> © 2019 </td>
-            </tr>
-        </table>
-    </div>
 
     <!-- SCRIPTS -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0IQNpWvCKsQgtZRBTw_ko7c448fklMyE&callback=initMap&libraries=places&callback=autocompleta" type="text/javascript"></script>
