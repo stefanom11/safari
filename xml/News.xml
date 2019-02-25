@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<newscollection>
+  <news>
+	<category>Kenya</category>
+    <immagine>WILDBEAST0.jpg</immagine>
+    <title> Yolt </title>
+    <body> A platform to manage your money in a smart and easy way in one App </body>
+  </news> 
+  <news>
+	<category>Kenya</category>
+    <immagine>GIRAFFA0.jpg</immagine>
+    <title> Yolt </title>
+    <body> A platform to manage your money in a smart and easy way in one App </body>
+  </news>
+  <news>
+	<category>Tanzania</category>
+    <immagine>GHEPARDO0.jpg</immagine>
+    <title> Yolt </title>
+    <body> A platform to manage your money in a smart and easy way in one App </body>
+  </news>
+ <news>
+	<category>Tanzania</category>
+    <immagine>LION0.jpeg</immagine>
+    <title> Yolt </title>
+    <body> A platform to manage your money in a smart and easy way in one App </body>
+  </news>
+ <news>
+	<category>Tanzania</category>
+    <immagine>ANTILOPE0.jpg</immagine>
+    <title> Yolt </title>
+    <body> A platform to manage your money in a smart and easy way in one App </body>
+  </news>
+ <news>
+	<category>Tanzania</category>
+    <immagine>WILDBEAST0.jpg</immagine>
+    <title> Yolt </title>
+    <body> A platform to manage your money in a smart and easy way in one App </body>
+  </news>
+ <news>
+	<category>LatestNews</category>
+    <immagine>GIRAFFA0.jpg</immagine>
+    <title> Yolt </title>
+    <body> A platform to manage your money in a smart and easy way in one App </body>
+  </news>
+ <news>
+	<category>LatestNews</category>
+    <immagine>LION0.jpeg</immagine>
+    <title> Yolt </title>
+    <body> A platform to manage your money in a smart and easy way in one App </body>
+  </news>
+ <news>
+	<category>LatestNews</category>
+    <immagine>GHEPARDO0.jpg</immagine>
+    <title> Yolt </title>
+    <body> A platform to manage your money in a smart and easy way in one App </body>
+  </news>
+</newscollection>

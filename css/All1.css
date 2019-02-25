@@ -1,0 +1,619 @@
+﻿
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+html, body {
+    height: 100%;
+    min-height: 600px;
+    overflow-x: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.inline {
+    display: inline-block;
+    float:left;
+}
+
+.t1 {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.t2 {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.t3 {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.t4 {
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.t5 {
+    font-size: 1.1rem;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+input[type="radio"]:checked+label{
+    border-color: purple;
+    border-style: solid;
+} 
+
+/* HomeHTML.HEADER HOME PAGE: Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 10s;
+    animation-name: fade;
+    animation-duration: 10s;
+}
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: .6
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: .6
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: .6
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: .6
+    }
+}
+
+/* HomeHTML.BODY_Row2.SlidersJS: highlight borders on click*/
+.Highlight {
+    border: 1px solid rgb(13, 79, 186);
+}
+
+    .Highlight:hover {
+        border: 3px solid rgb(94, 31, 242);
+    }
+/* HomeHTML.BODY_Row2: show buttons for sliders only on hover*/
+.containerslider button {
+    display: none;
+}
+
+.containerslider:hover button {
+    display: block;
+}
+/* HomeHTML.BODY_Row2: make the content of the slider not selectable to avoid errors in the drag and scroll */
+.containerslider > * {
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+/* HomeHTML.HEADER HOME PAGE_Row4: make the shadow of the button more intense on hover */
+.ShadowButton {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.ShadowButton:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.45);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    html {
+        font-size: 16px !important;
+    }
+
+    .es-hidden {
+        display:none;
+    }
+
+    .es-inline {
+        display: inline-block;
+        float:left;
+    }
+
+    .es-t1 {
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        line-height: 1;
+    }
+    
+    .es-t2 {
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        line-height: 1;
+    }
+    
+    .es-t3 {
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        line-height: 1;
+    }
+    
+    .es-t4 {
+        font-size: 0.8rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        line-height: 1;
+    }
+    
+    .es-t5 {
+        font-size: 1.1rem;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+    }
+
+    .es-tl-roundcorner {
+        border-top-left-radius: 5px;
+    }
+
+    .es-tr-roundcorner {
+        border-top-right-radius: 5px;
+    }
+
+    .es-br-roundcorner {
+        border-bottom-right-radius: 5px;
+    }
+
+    .es-bl-roundcorner {
+        border-bottom-left-radius: 5px;
+    }
+
+    .min-col-es-12 {
+        min-width: 100%;
+    }
+
+    .col-es-1 {
+        width: 8.33%;
+    }
+
+    .col-es-2 {
+        width: 16.66%;
+    }
+
+    .col-es-3 {
+        width: 25%;
+    }
+
+    .col-es-4 {
+        width: 33.33%;
+    }
+
+    .col-es-5 {
+        width: 41.66%;
+    }
+
+    .col-es-6 {
+        width: 50%;
+    }
+
+    .col-es-8 {
+        width: 66.66%;
+    }
+
+    .col-es-10 {
+        width: 83.33%;
+    }
+
+    .col-es-12 {
+        width: 100%;
+    }
+
+    .row-es-0 {
+        height: 0%;
+    }
+
+    .row-es-1 {
+        height: 8.33%;
+    }
+
+    .row-es-2 {
+        height: 16.66%;
+    }
+
+    .row-es-3 {
+        height: 25%;
+    }
+
+    .row-es-4 {
+        height: 33.33%;
+    }
+
+    .row-es-6 {
+        height: 50%;
+    }
+
+    .row-es-8 {
+        height: 66.66%;
+    }
+
+    .row-es-9 {
+        height: 75%;
+    }
+
+    .row-es-10 {
+        height: 83.33%;
+    }
+
+    .row-es-11 {
+        height: 91.66%;
+    }
+
+    .row-es-12 {
+        height: 100%;
+    }
+
+    .sq-es-1 {
+        width: 8.33%;
+        padding-top: 8.33%;
+    }
+
+    .sq-es-6 {
+        width: 50%;
+        padding-top: 50%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    html {
+        font-size: 16px !important;
+    }
+
+    .s-hidden {
+        display: none;
+    }
+
+    .s-inline {
+        display: inline-block;
+        float: left;
+    }
+
+    .s-t1 {
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        line-height: 1;
+    }
+    
+    .s-t2 {
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        line-height: 1;
+    }
+    
+    .s-t3 {
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        line-height: 1;
+    }
+    
+    .s-t4 {
+        font-size: 0.8rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        line-height: 1;
+    }
+    
+    .s-t5 {
+        font-size: 1.1rem;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+    }
+
+    .s-tl-roundcorner {
+        border-top-left-radius: 5px;
+    }
+
+    .s-tr-roundcorner {
+        border-top-right-radius: 5px;
+    }
+
+    .s-br-roundcorner {
+        border-bottom-right-radius: 5px;
+    }
+
+    .s-bl-roundcorner {
+        border-bottom-left-radius: 5px;
+    }
+
+    .min-col-s-12 {
+        min-width: 100%;
+    }
+
+    .col-s-1 {
+        width: 8.33%;
+    }
+
+    .col-s-2 {
+        width: 16.66%;
+    }
+
+    .col-s-3 {
+        width: 25%;
+    }
+
+    .col-s-4 {
+        width: 33.33%;
+    }
+
+    .col-s-6 {
+        width: 50%;
+    }
+
+    .col-s-8 {
+        width: 66.66%;
+    }
+
+    .col-s-10 {
+        width: 83.33%;
+    }
+
+    .col-s-12 {
+        width: 100%;
+    }
+
+    .row-s-0 {
+        height: 0%;
+    }
+
+    .row-s-1 {
+        height: 8.33%;
+    }
+
+    .row-s-2 {
+        height: 16.66%;
+    }
+
+    .row-s-3 {
+        height: 25%;
+    }
+
+    .row-s-4 {
+        height: 33.33%;
+    }
+
+    .row-s-6 {
+        height: 50%;
+    }
+
+    .row-s-8 {
+        height: 66.66%;
+    }
+
+    .row-s-9 {
+        height: 75%;
+    }
+
+    .row-s-10 {
+        height: 83.33%;
+    }
+
+    .row-s-11 {
+        height: 91.66%;
+    }
+
+    .row-s-12 {
+        height: 100%;
+    }
+
+    .sq-s-1 {
+        width: 8.33%;
+        padding-top: 8.33%;
+    }
+
+    .sq-s-6 {
+        width: 50%;
+        padding-top: 50%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    html {
+        font-size: 16px !important;
+    }
+
+    .m-hidden {
+        display: none;
+    }
+
+    .m-visible {
+        display: block;
+    }
+
+    .m-inline {
+        display: inline-block;
+        float: left;
+    }
+
+    .m-t1 {
+        font-size: 3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        line-height: 1;
+    }
+    
+    .m-t2 {
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        line-height: 1;
+    }
+    
+    .m-t3 {
+        font-size: 1.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        line-height: 1;
+    }
+    
+    .m-t4 {
+        font-size: 0.8rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        line-height: 1;
+    }
+    
+    .m-t5 {
+        font-size: 1.1rem;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+    }
+
+    .m-tl-roundcorner {
+        border-top-left-radius: 5px;
+    }
+
+    .m-tr-roundcorner {
+        border-top-right-radius: 5px;
+    }
+
+    .m-br-roundcorner {
+        border-bottom-right-radius: 5px;
+    }
+
+    .m-bl-roundcorner {
+        border-bottom-left-radius: 5px;
+    }
+
+    .min-col-m-3 {
+        min-width: 25%;
+    }
+
+    .col-m-2 {
+        width: 16.66%;
+    }
+
+    .col-m-3 {
+        width: 25%;
+    }
+
+    .col-m-4 {
+        width: 33.33%;
+    }
+
+    .col-m-6 {
+        width: 50%;
+    }
+
+    .col-m-8 {
+        width: 66.66%;
+    }
+
+    .col-m-10 {
+        width: 83.33%;
+    }
+
+    .col-m-12 {
+        width: 100%;
+    }
+
+    .row-m-0 {
+        height: 0%;
+    }
+
+    .row-m-1 {
+        height: 8.33%;
+    }
+
+    .row-m-2 {
+        height: 16.66%;
+    }
+
+    .row-m-4 {
+        height: 33.33%;
+    }
+
+    .row-m-8 {
+        height: 66.66%;
+    }
+
+    .row-m-11 {
+        height: 91.66%;
+    }
+
+    .row-m-12 {
+        height: 100%;
+    }
+
+    .sq-m-1 {
+        width: 8.33%;
+        padding-top: 8.33%;
+    }
+
+    .sq-m-3 {
+        width: 25%;
+        padding-top: 25%;
+    }
+
+    .sq-m-2 {
+        width: 16.66%;
+        padding-top: 16.66%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .col-l-3 {
+        width: 25%;
+    }
+
+    .sq-l-3 {
+        width: 25%;
+        padding-top: 25%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .col-el-3 {
+        width: 25%;
+    }
+
+    .sq-el-3 {
+        width: 25%;
+        padding-top: 25%;
+    }
+}
+

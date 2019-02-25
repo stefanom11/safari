@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<citiescollection>
+  <city>
+    <name>Kisumu</name>
+  </city> 
+  <city>
+    <name>Mombasa</name>
+  </city>
+  <city>
+    <name>Nairobi</name>
+  </city>
+</citiescollection>

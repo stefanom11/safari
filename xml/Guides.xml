@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<guidescollection>
+  <guide>
+    <picture>energierinnovabili.jpg</picture>
+    <name> Yolt </name>
+    <surname> Yolt </surname>
+    <nickname>Stefano</nickname>
+    <safaris> </safaris>
+    <experience> gold </experience>
+    <languages> A platform to manage your money in a smart and easy way in one App </languages>
+  </guide> 
+  <guide>
+    <picture>energierinnovabili.jpg</picture>
+    <name> Yolt </name>
+    <surname> Yolt </surname>
+    <nickname>Giacomo</nickname>
+    <safaris> </safaris>
+    <experience> gold </experience>
+    <languages> A platform to manage your money in a smart and easy way in one App </languages>
+  </guide>
+  <guide>
+    <picture>energierinnovabili.jpg</picture>
+    <name> Yolt </name>
+    <surname> Yolt </surname>
+    <nickname>Michele</nickname>
+    <safaris> </safaris>
+    <experience> silver </experience>
+    <languages> A platform to manage your money in a smart and easy way in one App </languages>
+  </guide>
+  <guide>
+    <picture>energierinnovabili.jpg</picture>
+    <name> Yolt </name>
+    <surname> Yolt </surname>
+    <nickname>Giovanni</nickname>
+    <safaris> </safaris>
+    <experience> gold </experience>
+    <languages> A platform to manage your money in a smart and easy way in one App </languages>
+  </guide>
+</guidescollection>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<guidescollection>
+  <vehicle>
+    <picture>energierinnovabili.jpg</picture>
+    <name> Yolt </name>
+    <surname> Yolt </surname>
+    <nickname> Yolt </nickname>
+    <safaris> </safaris>
+    <experience> </experience>
+    <languages> A platform to manage your money in a smart and easy way in one App </languages>
+  </vehicle> 
+  <vehicle>
+    <picture>energierinnovabili.jpg</picture>
+    <name> Yolt </name>
+    <surname> Yolt </surname>
+    <nickname> Yolt </nickname>
+    <safaris> </safaris>
+    <experience> </experience>
+    <languages> A platform to manage your money in a smart and easy way in one App </languages>
+  </vehicle>
+  <vehicle>
+    <picture>energierinnovabili.jpg</picture>
+    <name> Yolt </name>
+    <surname> Yolt </surname>
+    <nickname> Yolt </nickname>
+    <safaris> </safaris>
+    <experience> </experience>
+    <languages> A platform to manage your money in a smart and easy way in one App </languages>
+  </vehicle>
+</guidescollection>

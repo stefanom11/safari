@@ -1,0 +1,161 @@
+﻿<html>
+<head>
+	<!-- META -->
+	<!-- permette a IE11 di leggere le icons <i></i> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+
+	<title> Guides </title>
+
+	<!-- LIBRARIES -->
+	<!-- abilita media query in IE<9 -->
+	<!--[if lt IE 9]>
+		<script src="css3-mediaqueries.js"></script>
+		<script src="css3-mediaqueries.min.js"></script>
+	<![endif]-->
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<!-- AngularJS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+	<!-- LINKS -->
+	<!-- css external stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/All1.css" />
+	<!-- icons -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<!-- SCRIPTS -->
+</head>
+<body onload="assegnaParametri()">
+	<!-- HEADER: Menu, Explore, Discover -->
+	<div class="row-es-1 row-s-1 col-es-12 col-s-12" style="padding-top:1%;">
+		<div class="es-inline s-inline col-es-4 col-s-4 col-m-3 row-es-12 row-s-12">
+			<div style="display: inline-block">
+				<div class="row-es-12 row-s-12 m-hidden">
+					<i class="fas fa-bars" style="cursor: pointer" onclick="SDMenuOverlayOn()"></i>
+				</div>
+			</div>
+			<a id="indexLink" onclick="AggiornaLink('Index.html')" class="t5" style="color: black; font-weight:bold; display:inline-block; text-decoration:none;">ROYALSAFARI</a>
+		</div>
+		<div class="es-hidden s-hidden m-inline col-m-3 row-m-12" onclick="ExploreOverlayOn()">
+			<p class="t5" style="display:inline-block; font-weight:bold;">EXPLORE</p>
+			<i class="fas fa-caret-down" style="color: black"></i>
+		</div>
+		<div class="es-hidden s-hidden m-inline col-m-2 row-m-12">
+		</div>
+		<div class="es-hidden s-hidden m-inline col-m-3 row-m-12">
+			<div class="row-m-8" style="color: white; font-weight:bold; padding:3px; border-radius:5px; background-color:rgb(227, 232, 239); position:relative;">
+				<i class="fa fa-search" style="color: rgb(220, 224, 229); position: absolute; top:50%; left:1%; transform: translateY(-50%); -ms-transform: translateY(-50%);"></i>
+				<input style="position: absolute; top:50%; left:8%; transform: translateY(-50%); -ms-transform: translateY(-50%); width: 80%; height:100%; border: none; background-color:rgb(227, 232, 239); display:inline-block;" placeholder="Discover..." onkeyup="DiscoverDropdownOn(),showHint(this.value)" onfocusout="DiscoverDropdownOff()"></input>
+			</div>
+		</div>
+	</div>
+	<!-- &&& DROPDOWN: discover dropdown &&& -->
+	<div class="row-m-4 col-m-3" id="DiscoverDropdownContainer" style="z-index:-1; position:absolute; left:66.65%; top:6%;">
+		<div class="row-m-12 col-m-12" id="DiscoverDropdown" style="background-color:rgb(227, 232, 239); display:none; margin-top:10px; border-radius:5px; overflow-y:auto;">
+		</div>
+	</div>
+	<!-- &&& MOBILE MENU: mobile menu overlay &&& -->
+	<div class="row-es-12 row-s-12 col-es-12 col-s-12" id="SDMenuOverlay" style="z-index:3; position:fixed; top:0; left:0;background-color:rgba(0,0,0,0.5);display:none;" onclick="SDMenuOverlayOff()">
+		<div class="row-es-12 row-s-12" id="SDMenu" style="background-color:white; width:0%; -webkit-transition: width 2s;transition: width 2s;"></div>
+		<div class="row-es-12 row-s-12 col-es-6 col-s-6" onclick="SDMenuOverlayOff()"></div>
+	</div>
+
+
+	<div class="row-es-1 row-s-1 col-es-12 col-s-12">
+	</div>
+	<!-- BODY -->
+	<!-- BODY_Row1: Filter Menu -->
+	<div class="row-es-1 row-s-1 col-es-12 col-s-12">
+		<select id="experience" name="experience">
+			<option value="gold">Gold</option>
+			<option value="silver">Silver</option>
+			<option value="bronze">Bronze</option>
+		</select>
+		<select id="language" name="language">
+			<option value="english">English</option>
+			<option value="swahili">Swahili</option>
+			<option value="italian">Italian</option>
+			<option value="french">French</option>
+		</select>
+		<select id="safari" name="safari">
+				<option value="Masai Mara">Masai Mara</option>
+		</select>
+		<button id="filterpg">FILTER</button>
+		<button id="pgGuidesBnBook" onclick="goToPage('Book.html')">BOOK</button>
+	</div>
+	<div id="guidescontainer" class="col-es-8 col-s-8">
+	</div>
+
+
+	<script>
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function () {
+			if (this.readyState == 4 && this.status == 200) {
+				myFunction(this);
+			}
+		};
+		xhttp.open("GET", "xml/Guides.xml", true);
+		xhttp.send();
+
+		function myFunction(xml) {
+			var i;
+			var xmlDoc = xml.responseXML;
+			var table;
+			var imm;
+			var cod = "";
+			var x = xmlDoc.getElementsByTagName("guide");
+			for (i = 0; i < x.length; i++) {
+				table = x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue;
+				imm = x[i].getElementsByTagName("picture")[0].childNodes[0].nodeValue;
+				exp = x[i].getElementsByTagName("experience")[0].childNodes[0].nodeValue;
+				nick = x[i].getElementsByTagName("nickname")[0].childNodes[0].nodeValue;
+				cod +=
+					"<div class='row-es-6 row-s-6 guide"+ exp +"'>" +
+					"<div class='col-es-4 col-s-4'>" +
+					"<img src='images/" + imm + "' style='width:100%'></img>" +
+					"</div>" +
+					"<div class='col-es-8 col-s-8'>" +
+					"<p>" + table + "</p>" +
+					"<input type='radio' name='guide' id='"+nick+"' value='"+nick+"'/>" +
+					"</div>" +
+					"</div>";
+			}
+			document.getElementById("guidescontainer").innerHTML = cod;
+		}
+
+	</script>
+
+
+	<script src="DropdownANDShowHint.js"></script>
+	<script src="js/Events.js"></script>
+
+	<script src="js/GoToPage.js"></script>
+
+	<script>
+	
+	function filter(a,b,c,d) {
+      var x, i;
+      x = document.querySelectorAll(".guide");
+      for (i = 0; i < x.length; i++) {
+		  if ((x[i].classList.contains(a) || x[i].classList.contains(b) || x[i].classList.contains(c) || x[i].classList.contains(d))&&(x[i].classList.contains('hidden'))){
+			x[i].classList.remove('hidden');
+		  } else if(!(x[i].classList.contains(a) || x[i].classList.contains(b) || x[i].classList.contains(c) || x[i].classList.contains(d))&&(!x[i].classList.contains('hidden'))){
+			x[i].classList.add('hidden');
+		  }
+	  }
+	}
+
+	var bnFilter = document.getElementById("filterpg");
+	var inExperience = document.getElementById("experience");
+	var inLanguage = document.getElementById("language");
+	var inSafari = document.getElementById("safari");
+
+	bnFilter.addEventListener("click", function () { filter(experience.value, language.value, safari.value, 'ciao'); });
+	</script>
+</body>
+</html>

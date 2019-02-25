@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- META -->
+    <!-- permette a IE11 di leggere le icons <i></i> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+
+    <title> Home </title>
+
+    <!-- LIBRARIES -->
+    <!-- abilita media query in IE<9 -->
+    <!--[if lt IE 9]>
+        <script src="css3-mediaqueries.js"></script>
+        <script src="css3-mediaqueries.min.js"></script>
+    <![endif]-->
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <!-- LINKS -->
+    <!-- css external stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/All1.css" />
+    <!-- icons -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- SCRIPTS -->
+
+</head>
+<body onload="assegnaParametri()">
+    <div class="col-es-12 col-s-12 row-es-11 row-s-11" style="padding: 1%; position:relative; background: linear-gradient(90deg, rgba(148,39,224,1) 0%, rgba(163,40,233,1) 50%, rgba(182,114,233,1) 100%);">
+        <!-- HEADER HOME PAGE_Row1: Menu, Explore, Discover -->
+        <div class="row-es-1 row-s-1 col-es-12 col-s-12">
+            <div class="es-inline s-inline col-es-12 col-s-4 row-es-12 row-s-12">
+                <div style="display: inline-block">
+                    <div class="row-es-12 row-s-12 m-hidden">
+                        <i id="SDMenuIcon" class="fas fa-bars" style="cursor: pointer"></i>
+                    </div>
+                </div>
+                <a class="t5" id="Home0" class="t5" style="color: black; font-weight:bold; display:inline-block; text-decoration:none;">ROYALSAFARI</a>
+            </div>
+            <div class="es-hidden s-hidden m-inline col-m-3 row-m-12" onclick="ExploreOverlayOn()">
+                <p class="t5" style="display:inline-block; font-weight:bold;">EXPLORE</p>
+                <i class="fas fa-caret-down" style="color: black"></i>
+            </div>
+            <div class="es-hidden s-hidden m-inline col-m-2 row-m-12">
+            </div>
+            <div class="es-hidden s-hidden m-inline col-m-3 row-m-12" style="padding-right:7.5px">
+                <div  style="height: 40px; color: white; font-weight:bold; padding:3px; border-radius:5px; background-color:rgb(227, 232, 239); position:relative;">
+                    <i class="fa fa-search" style="color: rgb(220, 224, 229); position: absolute; top:50%; left:1%; transform: translateY(-50%); -ms-transform: translateY(-50%);"></i>
+                    <input style="position: absolute; top:50%; left:8%; transform: translateY(-50%); -ms-transform: translateY(-50%); width: 80%; height:100%; border: none; background-color:rgb(227, 232, 239); display:inline-block;" placeholder="Discover..." onkeyup="DiscoverDropdownOn(),showHint(this.value)" onfocusout="DiscoverDropdownOff()"></input>
+                </div>
+            </div>
+        </div>
+
+        <!-- HEADER HOME PAGE_Row2: Empty -->
+        <div class="row-s-0 row-es-0 row-m-2">
+        </div>
+
+        <!-- HEADER HOME PAGE_Row3: Title -->
+        <div class="row-es-1 row-s-1 row-m-2" style="position: relative">
+            <div class="col-es-12 col-s-12" style="padding-left:5px">
+                <p class="es-t1 s-t1 m-t1" style="position: absolute; top:50%; transform: translateY(-50%); -ms-transform: translateY(-50%);"> Go beyond traditional Safaris</p>
+            </div>
+        </div>
+
+        <!-- HEADER HOME PAGE_Row4: Empty -->
+        <div class="row-es-1 row-s-1 row-m-0">
+        </div>
+
+        <!-- HEADER HOME PAGE_Row5_Laptop: Description and Button -->
+        <div class="row-es-1 row-s-1 col-es-12 col-s-12" style="display: flex; flex-wrap:wrap;">
+            <div class="es-hidden row-s-12 col-s-2 m-hidden">
+            </div>
+            <div class="col-es-12 col-s-8 col-m-12" style="display: flex; flex-wrap:wrap;">
+                <p class="es-t3 s-t3 m-t3 col-es-12 col-s-12 col-m-4" style="opacity: 0.3; margin:0px 7.5px;"> We offer the cheapest and the highest quality Safaris. The choice is yours! </p>
+                <div class="col-es-12 col-s-12 m-hidden" style="height: 25px;">
+                </div>
+                <div class="ShadowButton col-es-12 col-s-12 col-m-4" id="bookLink" onclick="goToPage('Book.html')"  style="display:flex; height: 45px; max-width: 200px; margin:0px 7.5px; line-height: 1; background-color:rgb(96, 234, 176); text-align:center; border: 1px solid rgb(13, 79, 186); border-radius:5px;">
+                    <p class="t4" id="Book0" style="margin:auto; color: white; font-weight:bold; text-decoration: none;">CUSTOMIZE YOUR SAFARI</p>
+                </div>
+            </div>
+            <div class="es-hidden row-s-12 col-s-2 m-hidden">
+            </div>
+        </div>
+
+        <!-- HEADER HOME PAGE_Row6: Empty -->
+        <div class="row-es-2 row-s-2 row-m-2">
+        </div>
+
+        <!-- HEADER HOME PAGE_Row7: Categories -->
+        <div class="col-es-12 col-s-12" style="display: flex; align-items:center; flex-wrap:wrap;">
+            <div class="es-hidden row-s-12 col-s-2">
+            </div>
+            <div class="col-es-12 col-s-8" style="display: flex; flex-wrap:wrap;">
+                <div class="col-es-12 col-s-12 col-m-4" style="padding: 7.5px 7.5px 7.5px 15px;">
+                    <p style="text-align:center; color: white; background-color:rgba(157, 154, 249, 0.3); border-radius:5px; padding: 10px 0px;"> <span class="es-t2 s-t2 m-t2">41</span> <br /> Guides</p>
+                </div>
+                <div class="col-es-12 col-s-12 col-m-4" style="padding: 7.5px 7.5px 7.5px 15px;">
+                    <p style="text-align:center; color: white; background-color:rgba(157, 154, 249, 0.3); border-radius:5px; padding: 10px 0px;"> <span class="es-t2 s-t2 m-t2">23</span> <br /> Vehicles</p>
+                </div>
+                <div class="col-es-12 col-s-12 col-m-4" style="padding: 7.5px 7.5px 7.5px 15px;">
+                    <p style="text-align:center; color: white; background-color:rgba(157, 154, 249, 0.3); border-radius:5px; padding: 10px 0px;"> <span class="es-t2 s-t2 m-t2">25</span> <br /> Accomodations </p>
+                </div>
+            </div>
+            <div class="es-hidden row-s-12 col-s-2">
+            </div>
+        </div>
+    </div>
+
+    <!-- &&& DROPDOWN: discover dropdown &&& -->
+    <div class="row-m-4 col-m-3" id="DiscoverDropdownContainer" style="z-index:-1; position:absolute; right:7.5px; top:7%; padding-left: 10px;">
+        <div class="row-m-12 col-m-12" id="DiscoverDropdown" style="background-color:rgb(227, 232, 239); display:none; margin-top:10px; border-radius:5px; overflow-y:auto;">
+        </div>
+    </div>
+    <!-- &&& MOBILE MENU: mobile menu overlay &&& -->
+    <div class="row-es-12 row-s-12 col-es-12 col-s-12" id="SDMenuOverlay" style="z-index:3; position:fixed; top:0; left:0;background-color:rgba(0,0,0,0.5);display:none;">
+        <div class="row-es-12 row-s-12" id="SDMenu" style="background-color:white; width:0%; -webkit-transition: width 2s;transition: width 2s;"></div>
+        <div id="SDMenuOverlayArea1" class="row-es-12 row-s-12 col-es-6 col-s-6"></div>
+    </div>
+
+
+
+    <!-- BODY -->
+    <!-- BODY_Row1: Empty -->
+    <div class="row-es-2 row-s-2 col-es-12 col-s-12">
+    </div>
+    <!-- BODY_Row2: SliderA -->
+    <div class="row-es-9 row-s-9 col-es-12 col-s-12">
+        <div class="row-es-2 row-s-2 col-es-12 col-s-12" style="margin-left:15px">
+            <p class="t2" style="display:inline-block;">News from our latest journeys</p>
+            <i class="fas fa-long-arrow-alt-right" style="color:grey"></i>
+        </div>
+        <div id="cont1wrapper" class="row-es-9 row-s-9" style="position:relative; overflow:hidden;">
+            <div id="sliderA" class="dragscroll containerslider" name="LatestNews" style="height:100%; width:100%; padding-bottom: 5%; box-sizing: content-box; overflow-x: scroll; overflow-y: hidden; white-space: nowrap;">
+                <button id="bnscrollleft" style="position:absolute;  left: 0.5%; top:50%; width: 2%; height:8%; z-index:2" onclick="ScrollLeftSlowly($(this).parent().attr('id'))">
+                    <i class="fas fa-angle-left" style="color: rgb(94, 31, 242)"></i>
+                </button>
+                <button id="bnscrollright" style="position:absolute; left:97%; top:50%; width: 2%; height:8%; z-index:2" onclick="ScrollRightSlowly($(this).parent().attr('id'))">
+                    <i class="fas fa-angle-right" style="color: rgb(94, 31, 242)"></i>
+                </button>
+            </div>
+        </div>
+        <div class="row-esA-2">
+        </div>
+    </div>
+    <!-- BODY_Row2: SliderB -->
+    <div class="row-es-9 row-s-9 col-es-12 col-s-12">
+        <div class="row-es-2 row-s-2 col-es-12 col-s-12" style="margin-left:15px">
+            <p class="t2" style="display:inline-block;">Kenya</p>
+            <i class="fas fa-long-arrow-alt-right" style="color:grey"></i>
+        </div>
+        <div id="cont1wrapper" class="row-es-9 row-s-9" style="position:relative; overflow:hidden;">
+            <div id="sliderB" class="dragscroll containerslider" name="Kenya" style="height:100%; width:100%; padding-bottom: 5%; box-sizing: content-box; overflow-x: scroll; overflow-y: hidden; white-space: nowrap;">
+                <button id="bnscrollleft" style="position:absolute;  left: 0.5%; top:50%; width: 2%; height:8%; z-index:2" onclick="ScrollLeftSlowly($(this).parent().attr('id'))">
+                    <i class="fas fa-angle-left" style="color: rgb(94, 31, 242)"></i>
+                </button>
+                <button id="bnscrollright" style="position:absolute; left:97%; top:50%; width: 2%; height:8%; z-index:2" onclick="ScrollRightSlowly($(this).parent().attr('id'))">
+                    <i class="fas fa-angle-right" style="color: rgb(94, 31, 242)"></i>
+                </button>
+            </div>
+        </div>
+        <div class="row-esA-2">
+        </div>
+    </div>
+    <!-- BODY_Row2: SliderC -->
+    <div class="row-es-9 row-s-9 col-es-12 col-s-12">
+        <div class="row-es-2 row-s-2 col-es-12 col-s-12" style="margin-left:15px">
+            <p class="t2" style="display:inline-block;">Tanzania</p>
+            <i class="fas fa-long-arrow-alt-right" style="color:grey"></i>
+        </div>
+        <div id="cont1wrapper" class="row-es-9 row-s-9" style="position:relative; overflow:hidden;">
+            <div id="sliderC" class="dragscroll containerslider" name="Tanzania" style=" height:100%; width:100%; padding-bottom: 5%; box-sizing: content-box; overflow-x: scroll; overflow-y: hidden; white-space: nowrap;">
+                <button id="bnscrollleft" style="position:absolute;  left: 0.5%; top:50%; width: 2%; height:8%; z-index:2" onclick="ScrollLeftSlowly($(this).parent().attr('id'))">
+                    <i class="fas fa-angle-left" style="color: rgb(94, 31, 242)"></i>
+                </button>
+                <button id="bnscrollright" style="position:absolute; left:97%; top:50%; width: 2%; height:8%; z-index:2" onclick="ScrollRightSlowly($(this).parent().attr('id'))">
+                    <i class="fas fa-angle-right" style="color: rgb(94, 31, 242)"></i>
+                </button>
+            </div>
+        </div>
+        <div class="row-esA-2">
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <div class="row-es-1 row-s-1 col-es-12 col-s-12" style="margin-bottom:30px;">
+        <table class="col-es-12 col-s-12 row-es-12 row-s-12">
+            <tr class="col-es-12 col-s-12 row-es-4 row-s-4">
+                <td class="col-es-4 col-s-4" style="text-align:center">  </td>
+                <td class="col-es-4 col-s-4" style="text-align:center">  </td>
+                <td class="col-es-4 col-s-4" style="text-align:center">  </td>
+            </tr>
+            <tr class="col-es-12 col-s-12 row-es-4 row-s-4">
+                <td class="col-es-4 col-s-4" style="text-align:center"> About us </td>
+                <td class="col-es-4 col-s-4" style="text-align:center"> Work with us </td>
+                <td class="col-es-4 col-s-4" style="text-align:center"> ROYALSAFARI. All rights reserved </td>
+            </tr>
+            <tr class="col-es-12 col-s-12 row-es-4 row-s-4">
+                <td class="col-es-4 col-s-4" style="text-align:center"> Privacy policy </td>
+                <td class="col-es-4 col-s-4" style="text-align:center"> Contacts </td>
+                <td class="col-es-4 col-s-4" style="text-align:center"> © 2019 </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <!-- SCRIPTS -->
+    <script src="js/Sliders.js"></script>
+    <!-- modified library: scroll div by dragging it using the dragscroll class. (modification by me: scroll only horizontally)  -->
+    <script src="js/dragscrolling.js"></script>
+
+    <script src="js/DropdownANDShowHint.js"></script>
+
+    <script src="js/GoToPage.js"></script>
+
+    <script src="js/Overlays.js"></script>
+
+</body>
+</html>
