@@ -125,6 +125,7 @@ input[type="radio"]:checked+label{
 
 .containerslider1::-webkit-scrollbar { width: 0 !important }
 .containerslider1::-webkit-scrollbar { height: 0 !important }
+.containerslider1::-webkit-scrollbar { margin: 0 !important }
 .containerslider1 { overflow: -moz-scrollbars-none; }
 .containerslider1 { -ms-overflow-style: none; }
 
