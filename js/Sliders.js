@@ -26,7 +26,7 @@ function myFunction(xml) {
                 table = x[i].getElementsByTagName("body")[0].childNodes[0].nodeValue;
                 imm = x[i].getElementsByTagName("immagine")[0].childNodes[0].nodeValue;
                 cod +=
-                    "<div class='Highlight row-es-11 row-s-11 col-es-5 col-s-3 col-m-2' style='float: none; display: inline-block; border-radius:5px; margin:15px;'> " +
+                    "<div class='Highlight row-es-11 row-s-11 col-es-5 col-s-3 col-m-2' style='float: left; display: inline-block; border-radius:5px; margin:15px;'> " +
                     "<div class='row-es-6 row-s-6' style='width:100%'>" +
                 "<img draggable='false' src='images/" + imm + "' style='max-width: 100%; height: auto; max-height: 100%; margin-left:auto; margin-right:auto; display:block;'></img>" +
                     "</div>" +
