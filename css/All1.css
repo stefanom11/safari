@@ -129,6 +129,19 @@ input[type="radio"]:checked+label{
 .containerslider1 { overflow: -moz-scrollbars-none; }
 .containerslider1 { -ms-overflow-style: none; }
 
+.slider {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .slide {
+    width: 300px;
+    flex-shrink: 0;
+    height: 100%;
+  }
+
 /* HomeHTML.HEADER HOME PAGE_Row4: make the shadow of the button more intense on hover */
 .ShadowButton {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
