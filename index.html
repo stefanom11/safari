@@ -134,7 +134,7 @@
     </div>
     <!-- BODY_Row2: SliderA -->
     <div class="row-es-9 row-s-9 col-es-12 col-s-12">
-        <div class="row-es-2 row-s-2 col-es-12 col-s-12" style="margin-left:15px">
+        <div class="row-es-2 row-s-2 col-es-12 col-s-12" style="padding-left:15px">
             <p class="t2" style="display:inline-block;">News from our latest jou</p>
             <i class="fas fa-long-arrow-alt-right" style="color:grey"></i>
         </div>
@@ -148,11 +148,28 @@
                 </button>
             </div>
         </div>
-        <div class="row-esA-2">
+        <div class="row-es-1 row-s-1 col-es-12 col-s-12">
         </div>
     </div>
     <!-- BODY_Row2: SliderB -->
-
+    <div class="row-es-9 row-s-9 col-es-12 col-s-12">
+        <div class="row-es-2 row-s-2 col-es-12 col-s-12" style="padding-left:15px">
+            <p class="t2" style="display:inline-block;">News from our latest jou</p>
+            <i class="fas fa-long-arrow-alt-right" style="color:grey"></i>
+        </div>
+        <div id="cont1wrapper" class="row-es-9 row-s-9" style="position:relative;">
+            <div id="sliderA" class="row-es-12 row-s-12 col-es-12 col-s-12 dragscroll containerslider" name="LatestNews" style="padding-bottom: 5%;box-sizing: content-box; overflow-x: scroll; overflow-y: hidden; white-space: nowrap;">
+                <button id="bnscrollleft" style="position:absolute;  left: 0; top:50%; width: 2%; height:8%; z-index:2; margin-left: 5px;" onclick="ScrollLeftSlowly($(this).parent().attr('id'))">
+                    <i class="fas fa-angle-left" style="color: rgb(94, 31, 242)"></i>
+                </button>
+                <button id="bnscrollright" style="position:absolute; right:0; top:50%; width: 2%; height:8%; z-index:2; margin-right: 5px;" onclick="ScrollRightSlowly($(this).parent().attr('id'))">
+                    <i class="fas fa-angle-right" style="color: rgb(94, 31, 242)"></i>
+                </button>
+            </div>
+        </div>
+        <div class="row-es-1 row-s-1 col-es-12 col-s-12">
+        </div>
+    </div>
 
 
 
