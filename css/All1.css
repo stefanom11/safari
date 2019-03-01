@@ -119,6 +119,15 @@ input[type="radio"]:checked+label{
     -ms-user-select: none; /* IE 10+ */
     user-select: none; /* Standard syntax */
 }
+
+.containerslider1 {
+}
+
+.containerslider1::-webkit-scrollbar { width: 0 !important }
+.containerslider1::-webkit-scrollbar { height: 0 !important }
+.containerslider1 { overflow: -moz-scrollbars-none; }
+.containerslider1 { -ms-overflow-style: none; }
+
 /* HomeHTML.HEADER HOME PAGE_Row4: make the shadow of the button more intense on hover */
 .ShadowButton {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
