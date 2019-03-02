@@ -132,6 +132,24 @@
     <!-- BODY_Row1: Empty -->
     <div class="row-es-2 row-s-2 col-es-12 col-s-12">
     </div>
+    <!-- BODY_Row2: SliderD -->
+    <div class="row-es-9 row-s-9 col-es-12 col-s-12" style="position: relative;"">
+        <div id="weee" class="row-es-12 row-s-12 col-es-12 col-s-12" style="display: flex; flex-wrap: nowrap; overflow-x: auto;-webkit-overflow-scrolling: touch;">
+            <div class="card col-es-4 col-s-4" style="flex: 0 0 auto;"><h2>Card</h2></div>
+            <div class="card col-es-4 col-s-4" style="flex: 0 0 auto;"><h2>Card</h2></div>
+            <div class="card col-es-4 col-s-4" style="flex: 0 0 auto;"><h2>Card</h2></div>
+            <div class="card col-es-4 col-s-4" style="flex: 0 0 auto;"><h2>Card</h2></div>
+            <div class="card col-es-4 col-s-4" style="flex: 0 0 auto;"><h2>Card</h2></div>
+            <div class="card col-es-4 col-s-4" style="flex: 0 0 auto;"><h2>Card</h2></div>
+            <button id="bnscrollleft" style="position:absolute;  left: 0.5%; top:50%; width: 2%; height:8%; z-index:2; margin-left: 5px;" onclick="ScrollLeftSlowly($(this).parent().attr('id'))">
+                <i class="fas fa-angle-left" style="color: rgb(94, 31, 242)"></i>
+            </button>
+            <button id="bnscrollright" style="position:absolute; right:0; top:50%; width: 2%; height:8%; z-index:2; margin-right: 5px;" onclick="ScrollRightSlowly($(this).parent().attr('id'))">
+                <i class="fas fa-angle-right" style="color: rgb(94, 31, 242)"></i>
+            </button>
+        </div>
+        <div class="col-es-12 col-s-12 row-es-1 row-s-1" style="background-color: red; position: absolute; bottom: 0px;"></div>
+    </div>
     <!-- BODY_Row2: SliderA -->
     <div class="row-es-9 row-s-9 col-es-12 col-s-12">
         <div class="row-es-2 row-s-2 col-es-12 col-s-12" style="padding-left:15px">
@@ -189,7 +207,6 @@
         <div class="row-es-1 row-s-1 col-es-12 col-s-12">
         </div>
     </div>
-
 
 
 
