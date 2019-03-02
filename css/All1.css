@@ -131,6 +131,18 @@ input[type="radio"]:checked+label{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.45);
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+    .iOS-hidden {
+        display:none;
+    } 
+  }
+  
+  @supports not (-webkit-overflow-scrolling: touch) {
+    .noniOS-hidden {
+        display:none;
+    }
+  }
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
