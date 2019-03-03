@@ -132,7 +132,31 @@
     <!-- BODY_Row1: Empty -->
     <div class="row-es-2 row-s-2 col-es-12 col-s-12">
     </div>
-
+    <!-- BODY_Row2: SliderA -->
+    <div class="slider row-es-9 row-s-9 col-es-12 col-s-12" style="position: relative;">
+        <div class="row-es-2 row-s-2 col-es-12 col-s-12" style="padding-left:15px">
+            <p class="t2" style="display:inline-block;">News from our latest journey</p>
+            <i class="fas fa-long-arrow-alt-right" style="color:grey"></i>
+        </div>
+        <div id="weeee" class="row-es-10 row-s-10 col-es-12 col-s-12" style="display: flex; flex-wrap: nowrap; overflow-x: auto; -webkit-transform: translateZ(0); -webkit-overflow-scrolling: touch; overflow-y: auto;">
+            <div style="flex: 0 0 200px">Card</div>
+            <div style="flex: 0 0 200px">Card</div>
+            <div style="flex: 0 0 200px">Card</div>
+            <div style="flex: 0 0 200px">Card</div>
+            <div style="flex: 0 0 200px">Card</div>
+            <div style="flex: 0 0 200px">Card</div>
+            <div style="flex: 0 0 200px">Card</div>
+            <div style="flex: 0 0 200px">Card</div>
+        </div>
+        <button id="bnscrollleft" style="position:absolute;  left: 0.5%; top:50%; width: 30px; height:35px; z-index:2; margin-left: 5px;" onclick="ScrollLeftSlowly('weeee')">
+            <i class="fas fa-angle-left" style="color: rgb(94, 31, 242)"></i>
+        </button>
+        <button id="bnscrollright" style="position:absolute; right:0; top:50%; width: 30px; height:35px; z-index:2; margin-right: 5px;" onclick="ScrollRightSlowly('weeee')">
+            <i class="fas fa-angle-right" style="color: rgb(94, 31, 242)"></i>
+        </button>
+        <div class="noniOS-hidden col-es-12 col-s-12 row-es-11 row-s-11" style="background-color:transparent; position: absolute; bottom: 0px;"></div>
+        <div class="col-es-12 col-s-12 row-es-1 row-s-1" style="background-color: white; position: absolute; bottom: 0px;"></div>
+    </div>
     <!-- BODY_Row2: SliderA -->
     <div class="slider row-es-9 row-s-9 col-es-12 col-s-12" style="position: relative;">
         <div class="row-es-2 row-s-2 col-es-12 col-s-12" style="padding-left:15px">

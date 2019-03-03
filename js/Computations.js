@@ -12,6 +12,22 @@ var people = document.getElementById("people");
 
 
 //DEFINE FUNCTIONS
+function guideCostCalculator(){
+
+}
+
+function vehicleCostCalculator(){
+
+}
+
+function accomodationCostCalculator(){
+
+}
+
+function totalCostCalculator(){
+
+}
+
 function personCostCalculator() {
         if(people.value>0){
             personCost.innerHTML= 5/people.value;
