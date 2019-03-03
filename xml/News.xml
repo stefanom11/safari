@@ -40,19 +40,37 @@
  <news>
 	<category>LatestNews</category>
     <immagine>GIRAFFA0.jpg</immagine>
-    <title> Yolt </title>
-    <body> A platform to manage your money in a smart and easy way in one App </body>
+    <title> Maasai Mara </title>
+    <body> 2019, 3rd March </body>
   </news>
  <news>
 	<category>LatestNews</category>
     <immagine>LION0.jpeg</immagine>
-    <title> Yolt </title>
-    <body> A platform to manage your money in a smart and easy way in one App </body>
+    <title> Serengeti </title>
+    <body> 2019, 26th February </body>
   </news>
  <news>
 	<category>LatestNews</category>
     <immagine>GHEPARDO0.jpg</immagine>
-    <title> Yolt </title>
-    <body> A platform to manage your money in a smart and easy way in one App </body>
+    <title> Tsavo East </title>
+    <body> 2019, 21st February </body>
+  </news>
+  <news>
+	<category>LatestNews</category>
+    <immagine>WILDBEAST0.jpg</immagine>
+    <title> Amboseli </title>
+    <body> 2019, 21st February </body>
+  </news>
+  <news>
+	<category>LatestNews</category>
+    <immagine>ANTILOPE0.jpg</immagine>
+    <title> Maasai Mara </title>
+    <body> 2019, 19th February </body>
+  </news>
+  <news>
+	<category>LatestNews</category>
+    <immagine>GHEPARDO0.jpg</immagine>
+    <title> Tsavo West </title>
+    <body> 2019, 10th February </body>
   </news>
 </newscollection>

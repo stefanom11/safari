@@ -105,11 +105,11 @@ input[type="radio"]:checked+label{
         border: 3px solid rgb(94, 31, 242);
     }
 /* HomeHTML.BODY_Row2: show buttons for sliders only on hover*/
-.containerslider button {
+.slider button {
     display: none;
 }
 
-.containerslider:hover button {
+.slider:hover button {
     display: block;
 }
 /* HomeHTML.BODY_Row2: make the content of the slider not selectable to avoid errors in the drag and scroll */

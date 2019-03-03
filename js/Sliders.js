@@ -24,14 +24,15 @@ function myFunction(xml) {
         for (i = 0; i < x.length; i++) {
             if (x[i].getElementsByTagName("category")[0].childNodes[0].nodeValue == category) {
                 table = x[i].getElementsByTagName("body")[0].childNodes[0].nodeValue;
+                title = x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
                 imm = x[i].getElementsByTagName("immagine")[0].childNodes[0].nodeValue;
                 cod +=
-                    "<div class='Highlight row-es-11 row-s-11 col-es-5 col-s-3 col-m-2' style='float: none; display: inline-block; border-radius:5px; margin:15px;'> " +
-                    "<div class='row-es-6 row-s-6' style='width:100%'>" +
+                    "<div class='Highlight row-es-10 row-s-10' style='min-width: 160px; max-width: 250px; border-radius:5px; margin:15px;'> " +
+                    "<div class='row-es-6 row-s-6 col-es-12 col-s-12'>" +
                 "<img draggable='false' src='images/" + imm + "' style='max-width: 100%; height: auto; max-height: 100%; margin-left:auto; margin-right:auto; display:block;'></img>" +
                     "</div>" +
-                    "<div class='row-es-4 row-s-4'>" +
-                    "<p draggable='false' class='t5' style='white-space: normal;'>Yolt</p>" +
+                    "<div class='row-es-4 row-s-4' style='padding: 5px'>" +
+                    "<p draggable='false' class='t5' style='white-space: normal;'>" + title + "</p>" +
                     "<p draggable='false' style='white-space: normal;'>" + table + "</p>" +
                     "</div>" +
                     "<div class='row-es-2 row-s-2'>" +

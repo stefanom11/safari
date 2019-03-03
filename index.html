@@ -132,84 +132,29 @@
     <!-- BODY_Row1: Empty -->
     <div class="row-es-2 row-s-2 col-es-12 col-s-12">
     </div>
-    <!-- BODY_Row2: SliderD -->
-    <div class="row-es-9 row-s-9 col-es-12 col-s-12" style="position: relative;">
-        <div id="weee" class="row-es-12 row-s-12 col-es-12 col-s-12" style="display: flex; flex-wrap: nowrap; overflow-x: auto; -webkit-transform: translateZ(0); -webkit-overflow-scrolling: touch; overflow-y: auto;">
-            <div class="card col-es-4 col-s-4" style="flex: 0 0 auto;"><h2>Card</h2></div>
-            <div class="card col-es-4 col-s-4" style="flex: 0 0 auto;"><h2>Card</h2></div>
-            <div class="card col-es-4 col-s-4" style="flex: 0 0 auto;"><h2>Card</h2></div>
-            <div class="card col-es-4 col-s-4" style="flex: 0 0 auto;"><h2>Card</h2></div>
-            <div class="card col-es-4 col-s-4" style="flex: 0 0 auto;"><h2>Card</h2></div>
-            <div class="card col-es-4 col-s-4" style="flex: 0 0 auto;"><h2>Card</h2></div>
-            
-        </div>
-        <button id="bnscrollleft" style="position:absolute;  left: 0.5%; top:50%; width: 2%; height:8%; z-index:2; margin-left: 5px;" onclick="ScrollLeftSlowly('weee')">
-            <i class="fas fa-angle-left" style="color: rgb(94, 31, 242)"></i>
-        </button>
-        <button id="bnscrollright" style="position:absolute; right:0; top:50%; width: 2%; height:8%; z-index:2; margin-right: 5px;" onclick="ScrollRightSlowly('weee')">
-            <i class="fas fa-angle-right" style="color: rgb(94, 31, 242)"></i>
-        </button>
-        <div class="noniOS-hidden col-es-12 col-s-12 row-es-11 row-s-11" style="background-color:transparent; position: absolute; bottom: 0px;"></div>
-        <div class="col-es-12 col-s-12 row-es-1 row-s-1" style="background-color: red; position: absolute; bottom: 0px;"></div>
-    </div>
+
     <!-- BODY_Row2: SliderA -->
-    <div class="row-es-9 row-s-9 col-es-12 col-s-12">
+    <div class="slider row-es-9 row-s-9 col-es-12 col-s-12" style="position: relative;">
         <div class="row-es-2 row-s-2 col-es-12 col-s-12" style="padding-left:15px">
             <p class="t2" style="display:inline-block;">News from our latest journey</p>
             <i class="fas fa-long-arrow-alt-right" style="color:grey"></i>
         </div>
-        <div id="cont1wrapper" class="row-es-9 row-s-9" style="position:relative; overflow:scroll;">
-            <div id="sliderA" class="dragscroll containerslider" name="LatestNews" style="height:100%; width:100%; padding-bottom: 5%;box-sizing: content-box; overflow-x: scroll; overflow-y: scroll; white-space: nowrap;">
-                <button id="bnscrollleft" style="position:absolute;  left: 0; top:50%; width: 2%; height:8%; z-index:2; margin-left: 5px;" onclick="ScrollLeftSlowly($(this).parent().attr('id'))">
-                    <i class="fas fa-angle-left" style="color: rgb(94, 31, 242)"></i>
-                </button>
-                <button id="bnscrollright" style="position:absolute; right:0; top:50%; width: 2%; height:8%; z-index:2; margin-right: 5px;" onclick="ScrollRightSlowly($(this).parent().attr('id'))">
-                    <i class="fas fa-angle-right" style="color: rgb(94, 31, 242)"></i>
-                </button>
-            </div>
+        <div id="weee" name="LatestNews" class="containerslider row-es-10 row-s-10 col-es-12 col-s-12" style="display: flex; flex-wrap: nowrap; overflow-x: auto; -webkit-transform: translateZ(0); -webkit-overflow-scrolling: touch; overflow-y: auto;">
+            
         </div>
-        <div class="row-es-1 row-s-1 col-es-12 col-s-12">
-        </div>
+        <button id="bnscrollleft" style="position:absolute;  left: 0.5%; top:50%; width: 30px; height:35px; z-index:2; margin-left: 5px;" onclick="ScrollLeftSlowly('weee')">
+            <i class="fas fa-angle-left" style="color: rgb(94, 31, 242)"></i>
+        </button>
+        <button id="bnscrollright" style="position:absolute; right:0; top:50%; width: 30px; height:35px; z-index:2; margin-right: 5px;" onclick="ScrollRightSlowly('weee')">
+            <i class="fas fa-angle-right" style="color: rgb(94, 31, 242)"></i>
+        </button>
+        <div class="noniOS-hidden col-es-12 col-s-12 row-es-11 row-s-11" style="background-color:transparent; position: absolute; bottom: 0px;"></div>
+        <div class="col-es-12 col-s-12 row-es-1 row-s-1" style="background-color: white; position: absolute; bottom: 0px;"></div>
     </div>
-    <!-- BODY_Row2: SliderB -->
-    <div class="row-es-9 row-s-9 col-es-12 col-s-12">
-        <div class="row-es-2 row-s-2 col-es-12 col-s-12" style="padding-left:15px">
-            <p class="t2" style="display:inline-block;">Kenya</p>
-            <i class="fas fa-long-arrow-alt-right" style="color:grey"></i>
-        </div>
-        <div id="cont1wrapper" class="row-es-9 row-s-9" style="position:relative; overflow:hidden;">
-            <div id="sliderB" class="dragscroll containerslider" name="Kenya" style="height:100%; width:100%; padding-bottom: 5%; box-sizing: content-box; overflow-x: scroll; overflow-y: hidden; white-space: nowrap;">
-                <button id="bnscrollleft" style="position:absolute;  left: 0.5%; top:50%; width: 2%; height:8%; z-index:2; margin-left: 5px;" onclick="ScrollLeftSlowly($(this).parent().attr('id'))">
-                    <i class="fas fa-angle-left" style="color: rgb(94, 31, 242)"></i>
-                </button>
-                <button id="bnscrollright" style="position:absolute; right:0; top:50%; width: 2%; height:8%; z-index:2; margin-right: 5px;" onclick="ScrollRightSlowly($(this).parent().attr('id'))">
-                    <i class="fas fa-angle-right" style="color: rgb(94, 31, 242)"></i>
-                </button>
-            </div>
-        </div>
-        <div class="row-es-1 row-s-1 col-es-12 col-s-12">
-        </div>
+    
+    <!-- BODY_Row3: Empty -->
+    <div class="row-es-1 row-s-1 col-es-12 col-s-12">
     </div>
-    <!-- BODY_Row2: SliderC -->
-    <div class="row-es-9 row-s-9 col-es-12 col-s-12">
-        <div class="row-es-2 row-s-2 col-es-12 col-s-12" style="padding-left:15px">
-            <p class="t2" style="display:inline-block;">Tanzania</p>
-            <i class="fas fa-long-arrow-alt-right" style="color:grey"></i>
-        </div>
-        <div id="cont1wrapper" class="row-es-9 row-s-9" style="position:relative; overflow:hidden;">
-            <div id="sliderC" class="dragscroll containerslider" name="Tanzania" style=" height:100%; width:100%; padding-bottom: 5%; box-sizing: content-box; overflow-x: scroll; overflow-y: hidden; white-space: nowrap;">
-                <button id="bnscrollleft" style="position:absolute;  left: 0.5%; top:50%; width: 2%; height:8%; z-index:2; margin-left: 5px;" onclick="ScrollLeftSlowly($(this).parent().attr('id'))">
-                    <i class="fas fa-angle-left" style="color: rgb(94, 31, 242)"></i>
-                </button>
-                <button id="bnscrollright" style="position:absolute; right:0; top:50%; width: 2%; height:8%; z-index:2; margin-right: 5px;" onclick="ScrollRightSlowly($(this).parent().attr('id'))">
-                    <i class="fas fa-angle-right" style="color: rgb(94, 31, 242)"></i>
-                </button>
-            </div>
-        </div>
-        <div class="row-es-1 row-s-1 col-es-12 col-s-12">
-        </div>
-    </div>
-
 
 
 
